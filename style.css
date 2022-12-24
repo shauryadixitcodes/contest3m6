@@ -1,0 +1,152 @@
+body{
+    font-family: sans-serif;
+    background: #23242a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    color: #fff;
+
+}
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+.dropdown *{
+    box-sizing: border-box;
+}
+.select{
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px #2a2f3b solid;
+    padding: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select:hover{
+    background: #323741;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent ;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+.caret-rotate{
+    transform: rotate(180deg);
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+
+}
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover{
+    background: #2a2d35;
+}
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 3em;
+    margin-left: 10px;
+}
+.employeeItem{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px ;
+    margin: 10px;
+}
+.employeeItem span{
+    color: white;
+    font-size: 1.3rem;
+    
+
+}
+
+.bottom{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.bottom h3{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    margin-left: 252px;
+}
+
+.input-areas p{
+    color: white;
+    font-weight: 400;
+font-size: 12px;
+line-height: 22px;
+
+}
+
+.input-areas{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 250px;
+}
+
+#box{
+    width: 400px;
+    height: 56px;
+    left: 58px;
+    top: 886px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    background-color: #23242a;
+}
+
+.add-user{
+    margin-top: 20px;
+    margin-left: 250px;
+}
+
+  #button-new{
+    width: 226px;
+    height: 58px;
+    left: 58px;
+    top: 983px;
+    background: #FFFFFF;
+    border: none;
+    }
